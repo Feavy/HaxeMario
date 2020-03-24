@@ -1,0 +1,14 @@
+{
+	"search.exclude": {
+		"export/**/*.hx": true
+	},
+	"runOnSave.commands": [
+        {
+			"match": ".*",
+			"command": "lime build ${workspaceFolder} html5 -debug --connect 6000",
+			"runIn": "backend",
+			"runningStatusMessage": "Building project...",
+			"finishStatusMessage": "Project built"
+		}
+	]
+}
